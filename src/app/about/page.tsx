@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Page = () => {
     return (
-        <main className="flex flex-col flex-1 gap-3 p-2 h-fit bg-zinc-50 font-sans dark:bg-black border-2 border-dashed dark:border-red-400 border-red-400">
+        <main className="flex flex-col flex-1 gap-3 p-2 h-fit bg-zinc-50 font-sans dark:bg-black/20 border-2 border-dashed dark:border-red-400 border-red-400">
             <span className="text-red-400">AboutPage</span>
             <Link href="/about/author" className="flex flex-col w-fit  items-center justify-center mx-auto gap-2  hover:scale-[102%] transition-opacity">
                 <span className="mr-3 text-2xl text-yellow-600">👑 Leader</span>
