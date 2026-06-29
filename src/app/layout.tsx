@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/features/Header/Header";
+import {Providers} from "@/app/provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,17 +21,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children,}: Readonly<{ children: React.ReactNode; }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased p-2 bg-zinc-200 dark:bg-black/50`}
-    >
-      <body className="min-h-full flex flex-col">
-        <div className="flex flex-col bg-red-700/20 p-2 gap-2 border-2 border-dotted border-red-700">
-          <span className="text-red-700 font-bold">AppLayout</span>
-          <Header />
-          {children}
-        </div>
-      </body>
-    </html>
+      <html suppressHydrationWarning lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+        <body className="flex flex-col min-h-screen p-2 bg-zinc-200 dark:bg-black/50">
+            <Providers>
+              <div className="flex flex-1 flex-col bg-red-700/20 p-2 gap-2 border-2 border-dotted border-red-700">
+                <span className="text-red-700 font-bold">AppLayout</span>
+                <Header />
+                  <div className="flex flex-col">
+                      {children}
+                  </div>
+              </div>
+            </Providers>
+        </body>
+      </html>
   );
 }
