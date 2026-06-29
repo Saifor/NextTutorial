@@ -10,7 +10,7 @@ export function ThemeToggle() {
             onClick={() =>
                 setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
             }
-            className="p-2 rounded-2xl border-2 border-green-500 hover:bg-white/20 transition-colors text-nowrap flex-nowrap text-green-500"
+            className="p-2 rounded-2xl border-2 border-black  dark:border-white transition-colors text-nowrap flex-nowrap bg-background text-foreground"
         >
             Swap ☀️/🌙
         </button>

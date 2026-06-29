@@ -13,6 +13,8 @@ export default function Page({ error, reset }: ErrorProps){
                 <h2 className="font-bold text-lg">Здесь будет ошибка</h2>
                 <span className="text-sm my-2">{error.message}</span>
                 <button onClick={() => reset && reset()} className="mt-2 px-4 py-2 bg-red-600 text-white rounded-2xl text-sm hover:bg-red-700">Попробовать снова</button>
+                <a href="https://nextjs.org/docs/app/api-reference/file-conventions/error">Читать на nextJS.org</a>
+
             </div>
         </main>
     )

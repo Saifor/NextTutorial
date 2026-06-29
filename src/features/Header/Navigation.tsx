@@ -7,7 +7,10 @@ const Header = () => {
             <span className="text-blue-500 font-bold">Navigation</span>
             <div className="flex flex-row justify-center w-full gap-2 text-blue-500 flex-wrap">
                 <Link href="/" className="hover:underline p-2 border-2 border-blue-500 rounded-2xl hover:scale-[102%]">Main page</Link>
-                <Link href="/games" className="hover:underline p-2 border-2 border-blue-500 rounded-2xl hover:scale-[102%]">Games</Link>
+                <Link href="/about" className="hover:underline p-2 border-2 border-blue-500 rounded-2xl hover:scale-[102%]">About</Link>
+                <Link href="/store" className="hover:underline p-2 border-2 border-blue-500 rounded-2xl hover:scale-[102%]">Store</Link>
+                <Link href="/games/shooters" className="hover:underline p-2 border-2 border-blue-500 rounded-2xl hover:scale-[102%]">Games</Link>
+
                 <Link href="/lessons" className="hover:underline p-2 border-2 border-blue-500 rounded-2xl hover:scale-[102%]">Lessons</Link>
                 <Link href="/aksmndkask" className="hover:underline p-2 border-2 border-blue-500 rounded-2xl hover:scale-[102%]">404</Link>
             </div>

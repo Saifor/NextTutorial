@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-col flex-1 gap-3 p-2 font-sans dark:bg-black border-2 border-dashed dark:border-red-400 border-red-400 bg-red-400/20">
+    <main className="flex flex-col flex-1 gap-3 p-2 font-sans dark:bg-black/30 border-2 border-dashed dark:border-red-400 border-red-400 bg-red-400/20">
       <span className="text-red-500 font-bold">Page</span>
-      <div className="max-w-125 mx-auto py-16 px-16 bg-white dark:bg-white/10 flex flex-col justify-center items-center sm:items-start">
+      <div className="max-w-125 mx-auto py-12 px-12 gap-6 bg-white dark:bg-black/40 flex flex-col justify-center items-center sm:items-start">
         <Image className="dark:invert" src="/next.svg" alt="Next.js logo" width={100} height={20} priority />
 
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
@@ -21,7 +21,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-39.5"
+          <a className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#ccc] dark:hover:bg-[#383838] md:w-39.5"
             href=""
             target="_blank"
             rel="noopener noreferrer"
@@ -29,7 +29,7 @@ export default function Home() {
             Deploy Now
           </a>
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/8 px-5 transition-colors hover:border-transparent hover:bg-black/4 dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-39.5"
+            className="flex text-zinc-950 dark:text-zinc-50 h-12 w-full items-center justify-center rounded-full border border-solid border-black/8 px-5 transition-colors hover:border-transparent hover:bg-black/4 dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-39.5"
             href="" target="_blank" rel="noopener noreferrer"
           > Documentation </a>
         </div>

@@ -2,7 +2,6 @@
 
 import React, {useState} from "react";
 import Navigation from "@/features/Header/Navigation";
-import {ThemeToggle} from "@/features/ThemeToggle";
 
 const Header = () => {
     const [text, setText] = useState("");
@@ -17,7 +16,6 @@ const Header = () => {
                 placeholder="Содержимое Loyout сохранится при навигации"
                 className="py-2 px-3 w-full text-green-600 ring-2 ring-green-500 hover:ring-3 rounded-2xl outline-none"
             />
-            <ThemeToggle />
             <Navigation />
         </div>
     );
