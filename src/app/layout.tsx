@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased p-2`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased p-2 bg-zinc-200 dark:bg-black/50`}
     >
       <body className="min-h-full flex flex-col p-2 gap-2 border-2 border-dashed dark:border-white border-black">
         <>AppLayout

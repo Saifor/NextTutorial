@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-col flex-1 gap-3 p-2 h-fit bg-zinc-50 font-sans dark:bg-black border-2 border-dashed dark:border-red-400 border-red-400">
+    <main className="flex flex-col flex-1 gap-3 p-2 h-fit bg-red-50 font-sans dark:bg-black border-2 border-dashed dark:border-red-400 border-red-400">
       <span className="text-red-400">Page</span>
       <div className="max-w-125 mx-auto py-32 px-16 bg-white dark:bg-white/10 flex flex-col justify-center items-center sm:items-start">
         <Image className="dark:invert" src="/next.svg" alt="Next.js logo" width={100} height={20} priority />
