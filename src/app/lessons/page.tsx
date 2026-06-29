@@ -10,6 +10,8 @@ const Page = () => {
                 <div className="flex flex-row justify-center w-full gap-2">
                     <Link href="/lessons/loading" className="hover:underline p-2 border-2 rounded-2xl hover:scale-[102%]">Loading lesson</Link>
                     <Link href="/lessons/error" className="hover:underline p-2 border-2 rounded-2xl hover:scale-[102%]">Error lesson</Link>
+                    <Link href="/lessons/props" className="hover:underline p-2 border-2 rounded-2xl hover:scale-[102%]">Props lesson</Link>
+                    <Link href="/lessons/list" className="hover:underline p-2 border-2 rounded-2xl hover:scale-[102%]">ListItems lesson</Link>
                 </div>
             </div>
         </main>
