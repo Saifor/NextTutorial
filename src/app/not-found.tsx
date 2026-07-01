@@ -6,7 +6,7 @@ export default function NotFound() {
             <span className="text-red-400">Page Not Found: 404</span>
             <div className="flex flex-col gap-2 items-center justify-center">
                 К сожалению, мы не смогли найти страницу.
-                <Link href="/" className="flex p-2 bg-red-400 text-white ">Перейти на главную</Link>
+                <Link href="/" className="flex p-2 bg-red-400 text-white ">Вернуться на главную</Link>
             </div>
         </div>
     )

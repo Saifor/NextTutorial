@@ -1,5 +1,6 @@
-import Link from "next/link";
 import React from "react";
+import {LessonsItems} from "@/features/Lessons/Lessons";
+import {LessonsDb} from "@/features/Lessons/LessonsDb";
 
 const Page = () => {
     return (
@@ -7,12 +8,7 @@ const Page = () => {
             <span className="text-red-400">LessonsPage</span>
             <div className="flex mx-auto w-fit flex-col items-center gap-4 p-4 bg-zinc-50 dark:bg-black/40 rounded-2xl flex-nowrap text-nowrap border-2">
                 <span>I made this lessons for you:</span>
-                <div className="flex flex-row justify-center w-full gap-2">
-                    <Link href="/lessons/loading" className="hover:underline p-2 border-2 rounded-2xl hover:scale-[102%]">Loading lesson</Link>
-                    <Link href="/lessons/error" className="hover:underline p-2 border-2 rounded-2xl hover:scale-[102%]">Error lesson</Link>
-                    <Link href="/lessons/props" className="hover:underline p-2 border-2 rounded-2xl hover:scale-[102%]">Props lesson</Link>
-                    <Link href="/lessons/list" className="hover:underline p-2 border-2 rounded-2xl hover:scale-[102%]">ListItems lesson</Link>
-                </div>
+                <LessonsItems lessons={LessonsDb}></LessonsItems>
             </div>
         </main>
     )
