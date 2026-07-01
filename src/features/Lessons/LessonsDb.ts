@@ -22,5 +22,11 @@ export const LessonsDb = [
         subLessons: [
             { name: "List Items", pageUrl: "/lessons/list"}
         ]
+    },
+    {
+        subLessons: [
+            { name: "Events", pageUrl: "/lessons/events"},
+            { name: "State", pageUrl: "/lessons/state"}
+        ]
     }
 ];
