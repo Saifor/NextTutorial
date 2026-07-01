@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-interface Shop2PageProps {
+interface GamesPageProps {
     params: Promise<{ slug: string[] }>
 }
 
-export default async function ShopPage({ params }: Shop2PageProps){
+export default async function GamesPage({ params }: GamesPageProps){
     const { slug } = await params;
     const [category, brand, model] = slug;
 

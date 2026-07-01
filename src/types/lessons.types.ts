@@ -1,7 +1,7 @@
 export interface LessonsProps {
     lessons: {
         info?: string;
-        subLessons: SubLessonsProps[];
+        subLessons?: SubLessonsProps[];
     }[]
 }
 

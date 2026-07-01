@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import Banner from "./banner.svg"
+import Banner from "../assets/logo.svg"
 
 export default function Home() {
   return (
