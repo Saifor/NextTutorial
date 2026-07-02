@@ -1,10 +1,12 @@
 export interface UsersProps {
-    users: {
-        id: number,
-        name: string,
-        email?: string,
-        age?: number,
-        sex?: string,
-        phone?: string,
-    }[];
+    users: UserProps[];
+}
+
+export interface UserProps {
+    id: number,
+    name: string,
+    email?: string,
+    age?: number,
+    sex?: string,
+    phone?: string,
 }

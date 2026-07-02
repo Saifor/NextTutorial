@@ -17,6 +17,7 @@ export default function ExportPage(){
             >
                 handleClick
             </button>
+            Откройте консоль и посмотрите, что onClick сработал после нажатия по кнопке и вывел console.log.
         </div>
     )
 }

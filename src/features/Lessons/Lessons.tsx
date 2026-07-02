@@ -1,7 +1,9 @@
 import Link from "next/link";
-import {LessonsProps} from "@/types/lessons.types";
+import {db} from "@/lib/db";
 
-export const LessonsItems = ({lessons}: LessonsProps) => {
+export async function LessonsItems(){
+    const lessons = await db.query.lessons.findMany();
+
     return (
         <div className="max-xl:flex gap-3 flex-col xl:grid xl:grid-cols-2">
             { lessons.map((lesson, index) => (

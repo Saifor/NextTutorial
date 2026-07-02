@@ -3,7 +3,7 @@
 import Link from "next/link";
 import {UsersProps} from "@/types/users.types";
 
-export default function UserCard({users}: UsersProps) {
+export default function UsersCard({users}: UsersProps) {
     function handleUserNameClick() {
         console.log("handleUserNameClick called");
     }
